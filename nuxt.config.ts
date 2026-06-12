@@ -18,5 +18,9 @@ export default defineNuxtConfig({
   },
   ui: {
     colorMode: false
+  },
+  app: {
+    baseURL: '/test-kosignbiz/',
+    buildAssetsDir: '_nuxt/', 
   }
 })
