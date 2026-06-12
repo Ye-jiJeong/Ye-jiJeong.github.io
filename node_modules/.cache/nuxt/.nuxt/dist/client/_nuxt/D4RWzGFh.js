@@ -1,0 +1,1 @@
+import"./CPCXuxhT.js";const o=""+new URL("nonfacetoface2.C49NHmAu.svg",import.meta.url).href;export{o as n};
