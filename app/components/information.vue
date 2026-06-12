@@ -12,7 +12,6 @@ const modules = [Autoplay]
 const isRolling = ref(false)
 
 const checkResize = () => {
-  // 1024px 미만(2개 이하 표시)일 때만 롤링(무한루프 및 자동재생) 활성화
   isRolling.value = window.innerWidth < 1024
 }
 
@@ -30,7 +29,6 @@ import infor1 from '../img/main/information1.svg'
 import infor2 from '../img/main/information2.svg'
 import infor3 from '../img/main/information3.svg'
 
-// 데이터 배열 (수정 및 추가가 용이하도록 객체 데이터로 구성)
 const infoList = [
   {link: '', img: infor1, category: '[정책]', title: '홈택스 공인인증서 쉬운 발급방법', date: '2024. 3. 8.'},
   {link: '', img: infor2, category: '[정책]', title: '신용평가등급 발급 나라장터 등록 쉽게!!!!!', date: '2024. 3. 8.'},
@@ -42,7 +40,6 @@ const infoList = [
     <div class="w-full">
         <div class="flex items-end justify-between gap-4 max-sm:flex-col max-sm:items-start">
             <div>
-                <TitleH3 text="사업자 정보 마당" />
                 <TitleH2 text="사업자 정보 마당" />
                 <TitleP text="사업자들에게 꼭 필요한 정보를 제공합니다." />
             </div>

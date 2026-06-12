@@ -60,7 +60,6 @@ const reviews = ref([
       <div class="mb-1 flex items-start md:items-center justify-between gap-4">
         <div class="flex-1 flex flex-wrap items-end gap-x-3.5 gap-y-1">
           <div class="order-1 w-auto max-md:w-full flex items-center justify-between">
-            <TitleH3 text="생생한 고객 후기" class="mr-1.5 whitespace-nowrap" />
             <TitleH2 text="생생한 고객 후기" class="mr-1.5 whitespace-nowrap" />
             
             <div class="md:hidden flex items-center gap-1.5 max-sm:gap-1 shrink-0">
