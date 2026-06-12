@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@import "font.css";
+
+/* =========================================================
+   테마 커스터마이징 (Tailwind v4)
+   - @theme 안에서 CSS 변수를 정의하면 곧바로 유틸리티 클래스가 생성됩니다.
+   - 변수의 "네임스페이스(접두사)"가 어떤 유틸리티를 만들지 결정합니다.
+     --color-*      → bg-*, text-*, border-* ...
+     --font-*       → font-*
+     --text-*       → text-* (글자 크기)
+     --spacing-*    → p-*, m-*, gap-*, w-* ...
+     --radius-*     → rounded-*
+     --breakpoint-* → sm:, md:, lg: ...
+     --shadow-*     → shadow-*
+   ========================================================= */
+@theme {
+    /* ---- 폰트 ---------------------------------------------- */
+    /* font-display, font-sans 처럼 사용 → class="font-display" */
+    --font-sans: Pretendard, "Apple SD Gothic Neo", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    --color-primary: #0d6efd;
+    --color-secondary: #aeb2b6;
+    --color-success: #198754;
+    --color-danger: #dc3545;
+    --color-warning: #ffc107;
+    --color-info: #0dcaf0;
+
+    --breakpoint-xl: 1110px;
+}
+
+/* =========================================================
+   safelist (동적 클래스 강제 생성)
+   - Tailwind는 소스를 "텍스트"로만 스캔하므로 `bg-${color}-${n}` 처럼
+     런타임에 조립되는 클래스는 감지하지 못합니다.
+   - 스타일 가이드 페이지처럼 동적으로 색을 나열할 때만 등록하세요.
+     실제 서비스 코드에서는 클래스를 리터럴로 쓰는 것이 좋습니다.
+   - { } 중괄호 확장으로 조합을 한 번에 생성합니다.
+   ========================================================= */
+@source inline("{bg,text}-{red,orange,amber,yellow,lime,green,emerald,teal,cyan,sky,blue,indigo,violet,purple,fuchsia,pink,rose,slate,gray,zinc,neutral,stone,mauve,olive,mist,taupe}-{50,100,200,300,400,500,600,700,800,900,950}");
+
+
