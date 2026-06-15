@@ -29,7 +29,7 @@ const contactInfoList = [
 
     <div>
       <div class="bg-indigo-500 text-white rounded-2xl p-10 max-lg:p-8 max-md:p-6">
-        <TitleH1 text="1644-4074" class="" />
+        <TitleH1 text="1644-4074" class="text-white" />
         <ul class="flex flex-col gap-0.25 mt-3 mb-4.5">
           <li v-for="info in timeInfoList" :key="info.id" class="flex max-sm:items-start items-center gap-3 text-gray-200 text-xl max-lg:text-lg max-md:text-base">
             <span class="shrink-0">{{ info.title }}</span>

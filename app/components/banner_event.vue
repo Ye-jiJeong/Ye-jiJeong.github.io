@@ -6,13 +6,16 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
-import surveyBanner from '../img/main/survey_banner.svg'
+import surveyBanner1 from '../img/main/survey_banner1.svg'
+import surveyBanner2 from '../img/main/survey_banner2.svg'
+import surveyBanner3 from '../img/main/survey_banner3.svg'
 
 const modules = [Pagination, Navigation, Autoplay]
 
 const events = ref([
-  { id: 1, label: '설문조사 작성', title: '발급 후기 혜택', img: surveyBanner, bgColor: 'bg-[#0DCB67]', textColor: 'text-white' },
-  { id: 2, label: '이벤트 안내', title: '고객 이벤트', img: surveyBanner, bgColor: 'bg-fuchsia-500', textColor: 'text-white' }
+  { id: 1, label: '설문조사 작성', title: '발급 후기 혜택', img: surveyBanner1, bgColor: 'bg-[#0DCB67]', textColor: 'text-white' },
+  { id: 2, label: '사업자 범용인증서', title: '할인받고 발급받기', img: surveyBanner2, bgColor: 'bg-[#C76DEB]', textColor: 'text-white' },
+  { id: 3, label: '근로복지공단 지정', title: '4대보험 무료대행', img: surveyBanner3, bgColor: 'bg-[#08BBCF]', textColor: 'text-white' }
 ])
 </script>
 

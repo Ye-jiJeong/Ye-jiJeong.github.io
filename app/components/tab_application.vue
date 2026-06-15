@@ -57,7 +57,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="max-w-189.75 m-auto sticky top-5 z-20 py-2">
+  <div class="sticky top-0 pt-5 z-20 py-2 bg-white w-full">
     <Tab :tabs="tabs" :modelValue="currentTab" @update:modelValue="handleTabClick" />
   </div>
 

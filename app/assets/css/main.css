@@ -28,6 +28,13 @@
     --color-warning: #ffc107;
     --color-info: #0dcaf0;
 
+    /* 신규 지정 */
+    --color-tint: #E9F2F4;
+    --color-mist: #F1F6FD;
+    --color-sky-blue: #8CBEFF;
+    --color-bs-gray: #DEE2E6;
+    --color-muted-light: #F7F8FA;
+
     --breakpoint-xl: 1110px;
 }
 

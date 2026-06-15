@@ -44,12 +44,14 @@ watch(() => props.modelValue, () => {
 </script>
 
 <template>
-  <ul class="relative isolate z-0 flex items-center gap-2.5 p-4 bg-slate-100 rounded-full">
-    <div class="absolute -z-10 rounded-full bg-blue-600 transition-all duration-300 ease-in-out" :style="indicatorStyle"></div>
-    <li v-for="(tab, idx) in tabs" :key="idx" :ref="(el) => { if (el) tabRefs[idx] = el }" class="flex-1">
-      <button @click="emit('update:modelValue', idx)" :class="['w-full py-4 px-3 text-lg font-medium rounded-full cursor-pointer transition-colors duration-300', modelValue === idx ? 'text-white' : 'text-slate-600 hover:bg-slate-200']">{{ tab }}</button>
-    </li>
-  </ul>
+  <div class="max-w-189.75 m-auto">
+    <ul class="relative isolate z-0 flex items-center gap-2.5 p-4 bg-slate-100 rounded-full">
+      <div class="absolute -z-10 rounded-full bg-blue-600 transition-all duration-300 ease-in-out" :style="indicatorStyle"></div>
+      <li v-for="(tab, idx) in tabs" :key="idx" :ref="(el) => { if (el) tabRefs[idx] = el }" class="flex-1">
+        <button @click="emit('update:modelValue', idx)" :class="['w-full py-4 px-3 text-lg font-medium rounded-full cursor-pointer transition-colors duration-300', modelValue === idx ? 'text-white' : 'text-slate-600 hover:bg-slate-200']">{{ tab }}</button>
+      </li>
+    </ul>
+  </div>
 </template>
 
 

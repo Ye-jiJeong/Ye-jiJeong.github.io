@@ -44,7 +44,9 @@ const infoList = [
                 <TitleP text="사업자들에게 꼭 필요한 정보를 제공합니다." />
             </div>
 
-            <Button text="정보 게시글 더 보기" class="bg-primary text-inverted text-xl max-lg:text-lg max-md:text-base font-medium py-2.5 px-6 max-md:py-2 max-md:px-4" />
+            <NuxtLink to="/sub02_01">
+                <Button text="정보 게시글 더 보기" class="bg-primary text-inverted text-xl max-lg:text-lg max-md:text-base font-medium py-2.5 px-6 max-md:py-2 max-md:px-4" />
+            </NuxtLink>
         </div>
 
         <swiper

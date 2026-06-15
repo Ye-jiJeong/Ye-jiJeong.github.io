@@ -6,7 +6,7 @@ defineProps({
 </script>
 
 <template>
-  <h6 class="text-xl font-semibold text-black">{{ text }}</h6>
+  <h6 class="text-xl text-black font-semibold text-black">{{ text }}</h6>
 </template>
 
 <style scoped>

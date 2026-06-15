@@ -8,9 +8,9 @@ import img2 from '../img/main/btn_issue2.svg'
 import img3 from '../img/main/btn_issue3.svg'
 
 const issueList = ref([
-  {id: 1, theme: 'success', img: img1, badge: 'BEST', label: '10분 발급', title: '비대면 온라인 신청', desc: ['모든 과정 온라인 진행', '평일 9~16시 즉시 발급'], btnText: '온라인으로 신청하기'},
-  {id: 2, theme: 'primary', img: img2, badge: null, label: '빠른 발급', title: '발급기관 직접 방문', desc: ['전국 77개 발급기관 운영', '평일 9~17시 당일 발급'], btnText: '가까운 발급기관 찾기'},
-  {id: 3, theme: 'danger', img: img3, badge: null, label: '간편 발급', title: '우체부 방문 예약', desc: ['원하는 장소 및 날짜 선택', '신청 기준 2~3일 내 발급'], btnText: '방문 예약 신청하기'},
+  {id: 1, theme: 'success', img: img1, badge: 'BEST', label: '10분 발급', title: '비대면 온라인 신청', desc: ['모든 과정 온라인 진행', '평일 9~16시 즉시 발급'], btnText: '온라인으로 신청하기', link: '/sub01_01'},
+  {id: 2, theme: 'primary', img: img2, badge: null, label: '빠른 발급', title: '발급기관 직접 방문', desc: ['전국 77개 발급기관 운영', '평일 9~17시 당일 발급'], btnText: '가까운 발급기관 찾기', link: '/sub01_02'},
+  {id: 3, theme: 'danger', img: img3, badge: null, label: '간편 발급', title: '우체부 방문 예약', desc: ['원하는 장소 및 날짜 선택', '신청 기준 2~3일 내 발급'], btnText: '방문 예약 신청하기', link: '/sub01_03'},
 ])
 </script>
 
@@ -18,7 +18,7 @@ const issueList = ref([
   <ul class="flex w-full justify-center gap-5 max-lg:flex-col">
     <li v-for="issue in issueList" :key="issue.id" :class="['card-item rounded-2xl flex-1', issue.theme]">
       
-      <a href="" class="group relative flex h-full flex-col overflow-hidden rounded-2xl card-link max-lg:flex-row max-lg:items-center max-sm:flex-wrap max-lg:p-8 max-lg:p-5">
+      <NuxtLink :to="issue.link" class="group relative flex h-full flex-col overflow-hidden rounded-2xl card-link max-lg:flex-row max-lg:items-center max-sm:flex-wrap max-lg:p-8 max-lg:p-5">
         
         <div class="absolute inset-0 z-10 hidden group-hover:block pointer-events-none rounded-2xl border-3 border-transparent" style="mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); mask-composite: exclude; -webkit-mask-composite: xor;">
           <div class="spin-bg absolute -left-[50%] -top-[50%] h-[200%] w-[200%] animate-[spin_2s_linear_infinite]" style="background: conic-gradient(from 90deg, transparent 70%, currentColor 100%);"></div>
@@ -49,7 +49,7 @@ const issueList = ref([
           <Icon name="solar:alt-arrow-right-linear" class="text-3xl max-md:text-2xl text-black opacity-80" />
         </div>
 
-      </a>
+      </NuxtLink>
     </li>
   </ul>
 </template>

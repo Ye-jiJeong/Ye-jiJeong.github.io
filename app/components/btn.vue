@@ -14,7 +14,7 @@ defineProps({
 </script>
 
 <template>
-  <button class="inline-flex justify-center items-center gap-1.5 rounded-md cursor-pointer hover:opacity-80">
+  <button class="inline-flex justify-center items-center gap-1.5 py-5 px-10 text-xl rounded-xl font-medium cursor-pointer hover:opacity-80 max-lg:py-4 max-lg:px-8 max-md:px-6">
     <span>{{ text }}</span>
     <i v-if="!hideArrow" :class="['xi-angle-right-min', iconClass]"></i>
   </button>
