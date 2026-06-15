@@ -94,7 +94,7 @@ const procedureNotices = [
       </template>
 
       <template #tab3>
-        <Frequent class="mt-10" />
+        <Frequent />
       </template>
     </TabApplication>
   </section>

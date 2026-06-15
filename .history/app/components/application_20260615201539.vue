@@ -37,10 +37,10 @@ const props = defineProps({
       </h1>
 
       <ul class="flex flex-col gap-1">
-          <li v-for="(item, idx) in checkList" :key="idx" class="text-xl flex items-center gap-2.5 font-medium">
+          <li v-for="(item, idx) in checkList" :key="idx" class="text-lg flex items-center gap-2.5 font-medium">
           <Icon name="lucide:check" :class="titleClass" />
           <span>{{ item.text || item }}</span>
-          <Button v-if="item.btnText" :text="item.btnText" class="!text-base text-primary !p-0 hover:[&>span]:underline" iconClass="translate-y-[-1px]" />
+          <Button v-if="item.btnText" :text="item.btnText" class="text-base text-primary hover:[&>span]:underline" iconClass="translate-y-[-1px]" />
           </li>
       </ul>
     </div>

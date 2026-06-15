@@ -65,12 +65,12 @@ const actionCards = [
 
     <div class="flex items-end justify-between gap-5 mt-4">
       <div v-for="(tab, idx) in quickMenuTabs" :key="idx" class="relative w-62">
-        <div v-if="idx === 1" class="absolute -top-8 -right-3 whitespace-nowrap bg-slate-600 text-white text-sm font-normal py-2.75 px-3.75 rounded-full flex items-center gap-1.25 z-10">
+        <div v-if="idx === 1" class="absolute -top-8 -right-3 whitespace-nowrap bg-slate-600 text-white !text-sm font-normal py-2.75 px-3.75 rounded-full flex items-center gap-1.25 z-10">
           <i class="xi-info-o text-lg text-yellow-100"></i> 필수 확인 사항
           <span class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-600"></span>
         </div>
 
-        <Button :text="tab" hideArrow class="bg-white hover:bg-primary/10 text-black !text-base py-6 px-15 rounded-md w-full !justify-start text-left" />
+        <Button :text="tab" hideArrow class="bg-white hover:bg-primary/10 text-black text-base py-6 px-15 rounded-md w-full !justify-start text-left" />
       </div>
     </div>
 

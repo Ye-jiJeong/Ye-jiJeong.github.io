@@ -40,14 +40,14 @@ const props = defineProps({
           <li v-for="(item, idx) in checkList" :key="idx" class="text-xl flex items-center gap-2.5 font-medium">
           <Icon name="lucide:check" :class="titleClass" />
           <span>{{ item.text || item }}</span>
-          <Button v-if="item.btnText" :text="item.btnText" class="!text-base text-primary !p-0 hover:[&>span]:underline" iconClass="translate-y-[-1px]" />
+          <Button v-if="item.btnText" :text="item.btnText" class="text-base text-primary hover:[&>span]:underline" iconClass="translate-y-[-1px]" />
           </li>
       </ul>
     </div>
 
     <div class="relative w-fit">
       <img :src="imgUrl" alt="비주얼 이미지" />
-      <p v-if="visualBadgeText" class="absolute top-6 right-5 inline-block rounded-lg bg-warning py-1 px-4 font-bold text-lg max-md:top-3 max-md:right-3 max-md:py-0.5 max-md:px-2.5 max-md:text-sm">
+      <p v-if="visualBadgeText" class="absolute top-6 right-5 inline-block rounded-lg bg-warning py-1 px-4 font-bold text-lg">
           {{ visualBadgeText }}
       </p>
     </div>
@@ -57,7 +57,7 @@ const props = defineProps({
     <div class="bg-slate-200 py-7.5 px-8.75 rounded-2xl">
       <TitleH4 text="범용인증서 인기 활용처" class="mb-5 text-black font-bold" />
       <div class="[&>button]:bg-white [&>button]:py-4 [&>button]:rounded-xl [&>button]:font-medium text-base flex justify-between gap-2.75 [&>button]:border [&>button]:hover:bg-primary/10 [&>button]:hover:border-primary/10">
-        <button v-for="(tab, idx) in useList" :key="idx" type="button" :class="['border-white', tabClass]">{{ tab }}</button>
+        <button v-for="(tab, idx) in useList" :key="idx" type="button" :class="['border-white flex-1 whitespace-nowrap', tabClass]">{{ tab }}</button>
         <button type="button" class="!px-5.5 border-primary">+ 더보기</button>
       </div>
     </div>

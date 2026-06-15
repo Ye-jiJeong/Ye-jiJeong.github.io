@@ -90,11 +90,11 @@ const procedureNotices = [
       </template>
 
       <template #tab2>
-        <IssueReview class="mt-10" />
+        <IssueReview class="mt10" />
       </template>
 
       <template #tab3>
-        <Frequent class="mt-10" />
+        <Frequent />
       </template>
     </TabApplication>
   </section>

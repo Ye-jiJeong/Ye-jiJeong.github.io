@@ -70,7 +70,7 @@ const actionCards = [
           <span class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-600"></span>
         </div>
 
-        <Button :text="tab" hideArrow class="bg-white hover:bg-primary/10 text-black !text-base py-6 px-15 rounded-md w-full !justify-start text-left" />
+        <Button :text="tab" hideArrow class="bg-white hover:bg-primary/10 text-black text-base py-6 px-15 rounded-md w-full !justify-start text-left" />
       </div>
     </div>
 

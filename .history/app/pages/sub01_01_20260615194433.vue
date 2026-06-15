@@ -57,7 +57,7 @@ const procedureNotices = [
 </script>
 
 <template>
-  <section :class="$attrs.class" class="bg-gradient-to-b from-[#ebf2f4] to-white">
+  <section :class="$attrs.class" class="bg-gradient-to-b from-[#ebf2f4] to-white pt-10 max-lg:pt-8 max-md:pt-6 pb-16 max-lg:pb-12 max-md:pb-8">
     <div class="w-full max-w-[1140px] mx-auto px-8 max-lg:px-6 max-md:px-4">
       <support
         badgeText="누적 발급 80만 건"
@@ -78,7 +78,7 @@ const procedureNotices = [
     </div>
   </section>
 
-  <section class="w-full max-w-[1140px] mx-auto mt-25 px-8 max-lg:px-6 max-md:px-4">
+  <section class="w-full max-w-[1140px] mx-auto mt-25 max-lg:mt-16 max-md:mt-12 px-8 max-lg:px-6 max-md:px-4">
     <TabApplication>
       <template #tab1>
         <Procedure 
@@ -90,11 +90,11 @@ const procedureNotices = [
       </template>
 
       <template #tab2>
-        <IssueReview class="mt-10" />
+        <IssueReview />
       </template>
 
       <template #tab3>
-        <Frequent class="mt-10" />
+        <Frequent />
       </template>
     </TabApplication>
   </section>

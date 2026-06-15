@@ -20,14 +20,14 @@ const actionCards = [
 </script>
 
 <template>
-  <div class="mt-24">
-    <div class="flex items-end justify-between">
+  <div class="mt-24 max-lg:mt-16 max-md:mt-12">
+    <div class="flex items-end justify-between max-md:flex-col max-md:items-start max-md:gap-2">
       <TitleH4 text="인증서 사용기간" />
-      <p class="text-base text-primary flex items-center gap-2"><i class="xi-help-o"></i>서류 승인 완료 후, 카카오톡/이메일로 발급 코드 전송</p>
+      <p class="text-base max-sm:text-sm text-primary flex items-center gap-2"><i class="xi-help-o"></i>서류 승인 완료 후, 카카오톡/이메일로 발급 코드 전송</p>
     </div>
     
-    <div class="mt-7.5 flex justify-between gap-5">
-      <a :href="plan.link" v-for="plan in certificatePlans" :key="plan.id" :class="['group relative block border-2 rounded-2xl w-full p-7.5 pt-10 bg-white', plan.borderColor]">
+    <div class="mt-7.5 max-md:mt-5 flex justify-between gap-5 max-lg:flex-col max-lg:gap-4">
+      <a :href="plan.link" v-for="plan in certificatePlans" :key="plan.id" :class="['group relative block border-2 rounded-2xl w-full p-7.5 pt-10 max-md:p-5 max-md:pt-6 bg-white', plan.borderColor]">
         
         <div class="absolute -inset-[2px] z-10 hidden group-hover:block pointer-events-none rounded-2xl border-[3px] border-transparent" style="mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); mask-composite: exclude; -webkit-mask-composite: xor;">
           <div :class="['absolute -left-[50%] -top-[50%] h-[200%] w-[200%] animate-[spin_2s_linear_infinite]', plan.spinColor]" style="background: conic-gradient(from 90deg, transparent 70%, currentColor 100%);"></div>
@@ -35,11 +35,11 @@ const actionCards = [
 
         <div class="flex items-stretch justify-between mb-3.75">
           <TitleH4 :text="plan.title" />
-          <span v-if="plan.badge" class="bg-warning flex items-center px-3 rounded-lg font-medium text-base">{{ plan.badge }}</span>
+          <span v-if="plan.badge" class="bg-warning flex items-center px-3 max-md:px-2 rounded-lg font-medium text-base max-md:text-sm">{{ plan.badge }}</span>
         </div>
 
         <ul class="flex flex-col gap-1 border-b border-gray-200 pb-4.5">
-          <li v-for="(item, idx) in plan.features" :key="idx" :class="['flex items-center gap-2 text-xl text-gray-700', idx === 0 ? `font-bold ${plan.textColor}` : 'font-medium']">
+          <li v-for="(item, idx) in plan.features" :key="idx" :class="['flex items-center gap-2 text-xl max-md:text-lg max-sm:text-base text-gray-700', idx === 0 ? `font-bold ${plan.textColor}` : 'font-medium']">
             <Icon name="lucide:check" :class="plan.textColor" /> {{ item }}
           </li>
         </ul>
@@ -49,34 +49,34 @@ const actionCards = [
             <span>{{ price.label }}</span>
             <span v-if="!price.isFinal">{{ price.value }}</span>
             <div v-else class="flex items-end">
-              <span class="text-slate-900/30 text-sm mr-1.25 mb-1.5">{{ price.subLabel }}</span>
-              <strong class="text-black text-4xl">{{ price.value }}</strong>
+              <span class="text-slate-900/30 text-sm max-sm:text-xs mr-1.25 mb-1.5">{{ price.subLabel }}</span>
+              <strong class="text-black text-4xl max-md:text-3xl max-sm:text-2xl">{{ price.value }}</strong>
             </div>
           </div>
         </div>
 
-        <Button :text="plan.btnText" hideArrow :class="['text-white w-full py-5 text-xl font-medium mt-7.5', plan.bgColor]" />
+        <Button :text="plan.btnText" hideArrow :class="['text-white w-full py-5 max-md:py-3.5 text-xl max-md:text-lg font-medium mt-7.5 max-md:mt-5', plan.bgColor]" />
       </a>
     </div>
   </div>
 
-  <div class="mt-7.5 bg-slate-50 rounded-2xl p-7.5" >
+  <div class="mt-7.5 max-md:mt-5 bg-slate-50 rounded-2xl p-7.5 max-md:p-5" >
     <TitleH5 text="자주 사용하는 기능" />
 
-    <div class="flex items-end justify-between gap-5 mt-4">
-      <div v-for="(tab, idx) in quickMenuTabs" :key="idx" class="relative w-62">
-        <div v-if="idx === 1" class="absolute -top-8 -right-3 whitespace-nowrap bg-slate-600 text-white text-sm font-normal py-2.75 px-3.75 rounded-full flex items-center gap-1.25 z-10">
+    <div class="flex items-end justify-between gap-5 mt-4 max-lg:grid max-lg:grid-cols-2 max-sm:grid-cols-1">
+      <div v-for="(tab, idx) in quickMenuTabs" :key="idx" class="relative w-62 max-lg:w-full">
+        <div v-if="idx === 1" class="absolute -top-8 max-sm:-top-7 -right-3 whitespace-nowrap bg-slate-600 text-white text-sm max-sm:text-xs font-normal py-2.75 px-3.75 max-sm:py-1.5 max-sm:px-2.5 rounded-full flex items-center gap-1.25 z-10">
           <i class="xi-info-o text-lg text-yellow-100"></i> 필수 확인 사항
           <span class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-600"></span>
         </div>
 
-        <Button :text="tab" hideArrow class="bg-white hover:bg-primary/10 text-black !text-base py-6 px-15 rounded-md w-full !justify-start text-left" />
+        <Button :text="tab" hideArrow class="bg-white hover:bg-primary/10 text-black text-base max-md:text-sm py-6 max-md:py-4 px-15 max-lg:px-6 rounded-md w-full !justify-start text-left" />
       </div>
     </div>
 
-    <div class="mt-5 flex gap-5">
+    <div class="mt-5 max-md:mt-3 flex max-md:flex-col gap-5 max-md:gap-3">
       <button type="button" v-for="card in actionCards" :key="card.id" class="group text-left w-full cursor-pointer">
-        <div class="flex items-center gap-5 text-base bg-white group-hover:bg-primary/10 pl-10 transition-colors rounded-xl p-6">
+        <div class="flex items-center gap-5 max-md:gap-3 text-base max-md:text-sm bg-white group-hover:bg-primary/10 pl-10 max-sm:pl-6 transition-colors rounded-xl p-6 max-sm:p-4">
           <img :src="card.icon" alt="" />
           <div>
             <p class="mb-0.2">{{ card.title }}</p>
