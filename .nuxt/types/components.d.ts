@@ -29,6 +29,7 @@ interface _GlobalComponents {
   Certified: typeof import("../../app/components/certified.vue")['default']
   CreditRating: typeof import("../../app/components/credit_rating.vue")['default']
   CustoInfor: typeof import("../../app/components/custo_infor.vue")['default']
+  CustoInforCom: typeof import("../../app/components/custo_infor_com.vue")['default']
   Frequent: typeof import("../../app/components/frequent.vue")['default']
   ImageBoard: typeof import("../../app/components/image_board.vue")['default']
   Information: typeof import("../../app/components/information.vue")['default']
@@ -44,6 +45,7 @@ interface _GlobalComponents {
   Support: typeof import("../../app/components/support.vue")['default']
   Tab: typeof import("../../app/components/tab.vue")['default']
   TabApplication: typeof import("../../app/components/tab_application.vue")['default']
+  TabNewsletter: typeof import("../../app/components/tab_newsletter.vue")['default']
   TitleBase: typeof import("../../app/components/title_base.vue")['default']
   TitleH1: typeof import("../../app/components/title_h1.vue")['default']
   TitleH2: typeof import("../../app/components/title_h2.vue")['default']
@@ -214,6 +216,7 @@ interface _GlobalComponents {
   LazyCertified: LazyComponent<typeof import("../../app/components/certified.vue")['default']>
   LazyCreditRating: LazyComponent<typeof import("../../app/components/credit_rating.vue")['default']>
   LazyCustoInfor: LazyComponent<typeof import("../../app/components/custo_infor.vue")['default']>
+  LazyCustoInforCom: LazyComponent<typeof import("../../app/components/custo_infor_com.vue")['default']>
   LazyFrequent: LazyComponent<typeof import("../../app/components/frequent.vue")['default']>
   LazyImageBoard: LazyComponent<typeof import("../../app/components/image_board.vue")['default']>
   LazyInformation: LazyComponent<typeof import("../../app/components/information.vue")['default']>
@@ -229,6 +232,7 @@ interface _GlobalComponents {
   LazySupport: LazyComponent<typeof import("../../app/components/support.vue")['default']>
   LazyTab: LazyComponent<typeof import("../../app/components/tab.vue")['default']>
   LazyTabApplication: LazyComponent<typeof import("../../app/components/tab_application.vue")['default']>
+  LazyTabNewsletter: LazyComponent<typeof import("../../app/components/tab_newsletter.vue")['default']>
   LazyTitleBase: LazyComponent<typeof import("../../app/components/title_base.vue")['default']>
   LazyTitleH1: LazyComponent<typeof import("../../app/components/title_h1.vue")['default']>
   LazyTitleH2: LazyComponent<typeof import("../../app/components/title_h2.vue")['default']>

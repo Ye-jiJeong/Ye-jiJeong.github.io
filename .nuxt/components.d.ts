@@ -29,6 +29,7 @@ export const Certificate: typeof import("../app/components/certificate.vue")['de
 export const Certified: typeof import("../app/components/certified.vue")['default']
 export const CreditRating: typeof import("../app/components/credit_rating.vue")['default']
 export const CustoInfor: typeof import("../app/components/custo_infor.vue")['default']
+export const CustoInforCom: typeof import("../app/components/custo_infor_com.vue")['default']
 export const Frequent: typeof import("../app/components/frequent.vue")['default']
 export const ImageBoard: typeof import("../app/components/image_board.vue")['default']
 export const Information: typeof import("../app/components/information.vue")['default']
@@ -44,6 +45,7 @@ export const Subscription3: typeof import("../app/components/subscription-3.vue"
 export const Support: typeof import("../app/components/support.vue")['default']
 export const Tab: typeof import("../app/components/tab.vue")['default']
 export const TabApplication: typeof import("../app/components/tab_application.vue")['default']
+export const TabNewsletter: typeof import("../app/components/tab_newsletter.vue")['default']
 export const TitleBase: typeof import("../app/components/title_base.vue")['default']
 export const TitleH1: typeof import("../app/components/title_h1.vue")['default']
 export const TitleH2: typeof import("../app/components/title_h2.vue")['default']
@@ -214,6 +216,7 @@ export const LazyCertificate: LazyComponent<typeof import("../app/components/cer
 export const LazyCertified: LazyComponent<typeof import("../app/components/certified.vue")['default']>
 export const LazyCreditRating: LazyComponent<typeof import("../app/components/credit_rating.vue")['default']>
 export const LazyCustoInfor: LazyComponent<typeof import("../app/components/custo_infor.vue")['default']>
+export const LazyCustoInforCom: LazyComponent<typeof import("../app/components/custo_infor_com.vue")['default']>
 export const LazyFrequent: LazyComponent<typeof import("../app/components/frequent.vue")['default']>
 export const LazyImageBoard: LazyComponent<typeof import("../app/components/image_board.vue")['default']>
 export const LazyInformation: LazyComponent<typeof import("../app/components/information.vue")['default']>
@@ -229,6 +232,7 @@ export const LazySubscription3: LazyComponent<typeof import("../app/components/s
 export const LazySupport: LazyComponent<typeof import("../app/components/support.vue")['default']>
 export const LazyTab: LazyComponent<typeof import("../app/components/tab.vue")['default']>
 export const LazyTabApplication: LazyComponent<typeof import("../app/components/tab_application.vue")['default']>
+export const LazyTabNewsletter: LazyComponent<typeof import("../app/components/tab_newsletter.vue")['default']>
 export const LazyTitleBase: LazyComponent<typeof import("../app/components/title_base.vue")['default']>
 export const LazyTitleH1: LazyComponent<typeof import("../app/components/title_h1.vue")['default']>
 export const LazyTitleH2: LazyComponent<typeof import("../app/components/title_h2.vue")['default']>

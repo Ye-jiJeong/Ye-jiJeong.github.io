@@ -1,0 +1,56 @@
+<script setup lang="ts">
+import Button from '../components/btn.vue'
+import TitleH3 from '../components/title_h3.vue'
+
+// img
+import NewsletterImg from '../img/sub/newsletter_bg.svg'
+</script>
+
+<template>
+  <div 
+    :style="{ 
+      backgroundImage: `url(${NewsletterImg}), linear-gradient(to right, #0098F9, #9243FF)`
+    }" 
+    class="mb-17 mt-14.5 bg-no-repeat py-12 px-14 rounded-2xl text-white max-sm:p-10 newsletter-bg"
+  >
+    <TitleH3 text="모르면 손해 보는 사업자 필수 정보" class="text-white" />
+    <p class="mt-2 text-base opacity-90 max-sm:w-55 max-sm:leading-tight !max-[340px]:w-full">사장님의 성공을 바라며, 꼭 필요한 실무 소식만 요약해 드립니다.</p>
+    <Button text="지금 무료로 구독하기" class="mt-6 bg-white text-black py-4 px-6 text-lg font-semibold max-md:text-base" />
+  </div>
+  <!-- max-lg:w-85 max-lg:leading-tight -->
+</template>
+
+<style scoped>
+.newsletter-bg {
+  background-position: right 35px bottom -5px, center;
+  background-size: contain, 100%;
+}
+
+@media (max-width: 1024px) {
+  .newsletter-bg {
+    background-position: right 20px bottom, center !important;
+    background-size: 40%, 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter-bg {
+    background-position: right 20px bottom, center !important;
+    background-size: 40%, 100% !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .newsletter-bg {
+    background-position: right 10px bottom, center !important;
+    background-size: 46%, 100% !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .newsletter-bg {
+    background-position: right -20px bottom, center !important;
+    background-size: 60%, 100% !important;
+  }
+}
+</style>
