@@ -25,9 +25,9 @@ const handleFaqClick = (faq) => {
 
 <template>
   <div class="w-full">
-    <div class="flex items-center justify-between mb-6">
+    <div class="flex items-center justify-between">
       <TitleH4 text="자주하는 질문" />
-      <Button text="더보기" class="text-lg font-medium text-black max-md:text-base !p-0" />
+      <Button text="더보기" class="text-lg font-medium text-black max-md:text-base" />
     </div>
 
     <div class="flex flex-col w-full gap-2.5">
