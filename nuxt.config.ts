@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
@@ -20,7 +19,7 @@ export default defineNuxtConfig({
     colorMode: false
   },
   app: {
-    baseURL: '/test-kosignbiz/',
-    buildAssetsDir: '_nuxt/', 
+    baseURL: '/',
+    buildAssetsDir: '/_nuxt/'
   }
 })
